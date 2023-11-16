@@ -1,0 +1,169 @@
+/* Стилі загальної сторінки */
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+    /* text-align: center; Це додає вирівнювання по центру для контенту */
+}
+
+/* Стилі контейнера */
+.container {
+    max-width: 100%;
+    padding: 20px;
+    display: flexbox;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center; /* Вирівнювання по центру */
+    text-align: center; /* Відновлення тексту вліво */
+}
+
+/* Заголовок сторінки */
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    color: #333;
+}
+
+#tab1 {
+    display: flex;
+    width: 100%;
+}
+
+/* Стилі вкладок */
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 100%; /* Займає всю ширину контейнера */
+}
+
+.tab-link {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    padding: 20px;
+    margin: 20px;
+    outline: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tab-link.active {
+    background: #fff;
+    color: #db3b3b;
+}
+
+/* Стилі контенту вкладок */
+.tab-content {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 100%; /* Займає всю ширину контейнера */
+}
+
+/* Стилі для інпутів та кнопок */
+input, select {
+    width: 30%;
+    margin-bottom: 10px;
+    padding: 8px; /* Зменшено padding */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #333;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    margin: 30px 0 20px 0px;
+    padding: 16px 32px; /* Зменшено padding */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 110%;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #5b5b5b;
+    color: #ffffff;
+}
+
+/* Стилі для таблиці */
+table {
+    border-spacing: 1;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  table * {
+    position: relative;
+  }
+  table td, table th {
+    padding-left: 8px;
+  }
+  table thead tr {
+    height: 60px;
+    background: #333;
+    color: #fff
+  }
+  table tbody tr {
+    height: 50px;
+  }
+  table tbody tr:last-child {
+    border: 0;
+  }
+  table td, table th {
+    text-align: left;
+  }
+  table td.l, table th.l {
+    text-align: right;
+  }
+  table td.c, table th.c {
+    text-align: center;
+  }
+  table td.r, table th.r {
+    text-align: center;
+  }
+  
+  
+  .table100-head th{
+    font-family: OpenSans-Regular;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: unset;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
+  }
+  
+  tbody tr {
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    color: #808080;
+    line-height: 1.2;
+    font-weight: unset;
+  }
+  
+  tbody tr:hover {
+    color: #cf5959;
+    background-color: #f5f5f5;
+    cursor: pointer;
+  }
